@@ -1,0 +1,28 @@
+server:
+  port: 9191
+spring:
+  datasource:
+    username: sa
+    password: 3is
+    url: jdbc:sqlserver://localhost:1435;databaseName=MARKET
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+app:
+  messages:
+    SAVE_MSG: ACCOUNT REGISTRAION SUCCESSFUL
+    SAVE_FAIL: USER FAILED REGISTRATION
+    INVALID_MSG: PLEASE , GIVE CORRECT CREDENTIALS
+    LOCKED_MSG: YOUR ACCUNT IS LOCKED
+    UNLOCK_SUCC_MSG: ACCOUNT UNLOCKED SUCESSFULLY <a href="/">loginHere</a>
+    UNLOCK_FAIL_MSG: PLEASE , GIVE CORRECT TEMP PASSWORD
+   
+    
+    
+    
+    
